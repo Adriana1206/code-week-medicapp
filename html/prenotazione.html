@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prenotazione</title>
+    <link rel="stylesheet" href="../css/prenotazione.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Prenotazione Appuntamento</h2>
+        <form id="appointmentForm">
+            <div class="form-group">
+                <label for="date">Data Appuntamento:</label>
+                <input type="date" id="date" name="date"  required>
+            </div>
+            <div class="form-group">
+                <label for="appointmentType">Tipo di Appuntamento:</label>
+                <select id="appointmentType" name="appointmentType" required>
+                    <option value="">Seleziona tipo</option>
+                    <option value="controllo">Controllo</option>
+                    <option value="visita">Visita Specialistica</option>
+                    <option value="analisi">Analisi</option>
+                    <option value="terapia">Terapia</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button type="submit">Inserisci Appuntamento</button>
+            </div>
+            <p id="message"></p>
+        </form>
+    </div>
+
+    <div class="exit">
+        <img src="../img/exit.png" alt="">
+    </div>
+
+    <script type="module" src="../JavaScript/prenotazione.js"></script>
+</body>
+</html>
